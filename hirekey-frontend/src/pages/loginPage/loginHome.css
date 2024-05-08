@@ -4,7 +4,7 @@
     gap: 10%;
     align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    margin-top: 90px;
 }
 
 .intro-box {
@@ -95,8 +95,36 @@
         border-radius: 5px;
         outline: none;
     }
-    form button {
+    form > button {
         width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 0;
+        border-radius: 5px;
+        background: #2b78e4;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        outline: none;
+        transition: all .3s ease;
+        transform: translateY(4px);
+    }
+   form > button:hover {
+        transform: translateY(0);
+    }
+    .steps-btn {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 0;
+        border-radius: 5px;
+        color: #fff;  
+        display: flex ;
+        justify-content: space-between; 
+    }
+    .steps-btn > button {
+        width: 100px;
         padding: 10px;
         margin: 10px 0;
         border: 0;
@@ -107,10 +135,41 @@
         font-weight: 600;
         cursor: pointer;
         outline: none;
+        transition: all .3s ease;
+        transform: translateY(4px);
     }
-   
-
-
+    .steps-btn > button:hover {
+        transform: translateY(0);
+    }
+    fieldset {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    fieldset > button {
+        width: 30%;
+        background: #fff;
+        color: #2b78e4;
+        padding: 10px;
+        border: 1px solid #2b78e4;
+        transition: all .3s ease;
+        transform: translateY(4px);
+    }
+    fieldset > button:hover {
+        transform: translateY(0);
+    }
+    .selected {
+        background: #2b78e4;
+        color: #fff;
+    }
+    label {
+        display: flex;
+        align-items: center;
+        justify-content: space-around
+    }
 
 
 /*  media q*/

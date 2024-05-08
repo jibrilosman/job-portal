@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const dotenv = require('dotenv').config();
+require('dotenv').config();
 const cors = require('cors');
+require('./database/collections/contractorUsers');
+const ContractorUser = require('./api/contractorRoutes');
 
 const app = express();
 
@@ -30,6 +32,8 @@ app.get('/', (req, res) => {
     });
 
 
+//routes
+app.use('/api', ContractorUser);
 
 
 app.listen(PORT, () => {

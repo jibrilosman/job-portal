@@ -7,7 +7,6 @@ import ContractorLogin from "./pages/contractor/ContractorLogin";
 import ContractorSignup from "./pages/contractor/ContractorSignup";
 import WorkerLogin from "./pages/worker/WorkerLogin";
 import WorkerSignup from "./pages/worker/WorkerSignup";
-import StepOneForm from "./pages/contractor/StepTwoForm";
 
 
 function App() {
@@ -16,12 +15,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/continue" element={<LoginHome />} />
-      <Route path="/contractorlogin" element={<ContractorLogin />} />
-      <Route path="/contractorsignup" element={<ContractorSignup />} >
-        <Route path="contractorsignup/StepTwoForm" element={<StepOneForm />} />
-      </Route>
+      <Route path="about" element={<About />} />
+      <Route path="continue" element={<LoginHome />} />
+      <Route path="contractorlogin" element={<ContractorLogin />} />
+      <Route path="contractorsignup" element={<ContractorSignup />}/>
       <Route path="/workerlogin" element={<WorkerLogin />} />
       <Route path="/workersignup" element={<WorkerSignup />} />
       </Route>
